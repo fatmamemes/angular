@@ -26,6 +26,7 @@ export const routes: Routes = [
             { path: 'dynamic-menu', loadChildren: () => import('./pages/dynamic-menu/dynamic-menu.module').then(m => m.DynamicMenuModule), data: { breadcrumb: 'Dynamic Menu' }  },
             { path: 'profile', loadChildren: () => import ('./pages/profile/profile.module').then(m => m.ProfileModule), data: { breadcrumb: 'Profile' } },
               { path: 'forms-test', loadChildren: () => import ('./muhammad/forms-test/forms-test.module').then(m => m.FormsTestModule), data: { breadcrumb: 'form-test' } },
+              { path: 'fatma', loadChildren: () => import ('./fatma/basics/basics.module').then(m => m.BasicsModule), data: { breadcrumb: 'nestedComponents' } },
             { path: 'blank', component: BlankComponent, data: { breadcrumb: 'Blank page' } },
             { path: 'search', component: SearchComponent, data: { breadcrumb: 'Search' } }
         ]

@@ -1,0 +1,10 @@
+list products:
+<div *ngFor="let item of list">
+  <app-product [product]="item" (selectProduct)="changeProduct($event)" [productCount]="productCount"></app-product>
+</div>
+<mat-form-field>
+  <mat-label>name</mat-label>
+  <input matInput [value]="'ddddd'" (change)="changeInput($event.target.value)" required>
+</mat-form-field>
+<button (click)="productCount=10">ffff</button>
+
